@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    overflow: hidden;
+}
+
+
+h2{    
+    font-size: 7rem;
+    overflow: hidden;
+    color: #FFF;  
+    backdrop-filter: brightness(.5);  
+    letter-spacing: 4px;
+}
+
+.btn{
+    color: #FFF;
+    background-color: #000;
+    border: 3px solid;
+    padding: 20px 40px;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+.btn:hover{
+    color: #000;
+    background-color: #FFF;
+}
+
+.split{
+    width: 50%;
+    height: 100%;
+    top: 0;
+    overflow: hidden;
+
+}
+
+.split.left {  
+    position: absolute;
+    background-color: aqua;
+    left: 0;
+    background-image: url("https://m.media-amazon.com/images/I/81IPGZtygYL.__AC_SY445_SX342_QL70_ML2_.jpg");
+    background-size: cover;      
+}
+
+.split.right {
+    position: absolute;
+    right: 0;
+    background-color: cornflowerblue;
+    background-image: url("https://m.media-amazon.com/images/I/61P12ycOI7L.__AC_SX300_SY300_QL70_ML2_.jpg");
+    background-size: cover;
+}
+
+.active-left .left{
+    width: 75%;
+}
+
+.active-left .right{
+    width: 25%;
+}
+
+.active-right .left{
+    width: 25%;
+}
+
+.active-right .right{
+    width: 75%;
+}
+
+.left, .right {
+    transition: width 2s ease-in-out;
+}
