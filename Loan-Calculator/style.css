@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: rgb(149, 149, 149);
+    font-family:'Courier New', Courier, monospace;
+}
+
+.container {
+    background-color: #f6f0f0;
+    padding: 20px; 
+    border-radius: 10px;
+    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
+    margin: 5px;
+}
+
+.container p {
+    padding: 10px;
+}
+
+h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+.input {
+    width: 100%;
+    font-size: 20px;
+    height: 30px;
+    padding: 2px;
+}
+
+.payment{
+    font-weight: 600;
+    font-size: 20px;
+}
+
