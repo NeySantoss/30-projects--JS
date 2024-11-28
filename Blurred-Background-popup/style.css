@@ -1,0 +1,117 @@
+*{
+    margin: 0;   
+}
+
+.container{
+    display: flex;
+    align-items: center;    
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    background: url("https://images.unsplash.com/photo-1718241905916-1f9786324de9?q=80&w=1856&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    text-align: center;
+    transition: filter 0.7s ;    
+}
+
+.title{
+    font-size: 4rem;
+    color: #FFF;
+    font-family: cursive;
+    text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.9);
+    letter-spacing: 4px; 
+    margin: 10px;       
+}
+
+.btn {
+    padding: 10px 20px;
+    width: 200px;
+    background-color: #fd1b1b;
+    color: #FFF;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    filter: brightness(0.8);    
+}
+
+.active.container{
+    filter: blur(5px) brightness(.7);
+}
+
+.popup-container {
+    display: flex;
+    flex-direction: column;    
+    padding: 30px 10px;
+    position: fixed;
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%);
+    width: 400px;
+    height: 200px;
+    background: url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    color: #FFF;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8 );
+    opacity: 1;
+    transition: all .4s;
+}
+
+h4{
+    margin: 10px 0;
+    font-size: 2.2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+label {
+   color: #FFF;
+   font-weight: bold;
+   font-family: 'Courier New', Courier, monospace;   
+}
+
+.popup-btn {
+    background-color: #fd1b1b;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 2px solid #FFF;
+}
+
+.popup-btn:hover{
+    filter: brightness(0.8); 
+}
+
+.input {
+    border: 2px solid;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+    text-align: center;
+}
+
+input::placeholder{
+    color: rgb(184, 178, 178);
+}
+
+.close-icon{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.close-icon:hover{
+    color: #fd1b1b;
+}
+
+.active.popup-container {
+    visibility: hidden;
+    opacity: 0;
+    top: 10%;
+}
+
